@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Blog — Hilltribe Organic Team · Thailand 2026</title>
+  <meta name="description" content="Day-by-day blog from the Hilltribe Organic MBA team in Thailand.">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body class="blog-body">
+
+<!-- ══════════════════ NAVIGATION ══════════════════ -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <span class="leaf">🌿</span>
+    Hilltribe Organic Team
+  </a>
+
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#team">Our Team</a></li>
+    <li><a href="index.html#client">Our Client</a></li>
+    <li><a href="blog.html" class="active">Daily Blog</a></li>
+  </ul>
+</nav>
+
+
+<!-- ══════════════════ DAY TABS BAR ══════════════════ -->
+<div class="day-tabs-bar" id="day-tabs" role="tablist" aria-label="Select day">
+  <!-- Tabs injected by main.js -->
+</div>
+
+
+<!-- ══════════════════ SPLIT LAYOUT ══════════════════ -->
+<div class="blog-split">
+
+  <!-- MAP PANEL -->
+  <div class="map-panel">
+    <div id="map"></div>
+
+    <!-- Transport badge (appears during animation) -->
+    <div class="map-transport-badge" id="transport-badge"></div>
+
+    <!-- Legend -->
+    <div class="map-legend">
+      <div class="legend-item">
+        <div class="legend-dot plane"></div>
+        Flight
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot car"></div>
+        By car
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT PANEL -->
+  <div class="content-panel" role="tabpanel">
+    <div id="entry-content">
+      <!-- Injected by main.js → renderEntry() -->
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Scripts: order matters — data first, then map, then main -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/data.js"></script>
+<script src="js/map.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
