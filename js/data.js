@@ -152,8 +152,6 @@ const DAYS = [
       <p>We said goodbye to the HTO team and checked into a hotel overlooking the valley. The evening called for a trail run through the surrounding hills — the views were worth every step.</p>
     `,
     photos: [
-      "images/day4/DSCF6005.JPG",
-      "images/day4/DSCF6015.JPG",
       "images/day4/IMG_4173.jpeg",
       "images/day4/IMG_4175.jpeg",
       "images/day4/IMG_4176.jpeg",
@@ -284,19 +282,23 @@ const DAYS = [
     day:      9,
     date:     "Tuesday, May 26, 2026",
     shortDate:"May 26",
-    title:    "Day 9 — Coming Soon",
+    title:    "Day 9 — Thaifex: Asia's Biggest Food Fair",
     location: LOC.bangkok,
     travel:   null,
     authors:  "The Team",
     content: `
-      <p>A heads-down day of research, interviews follow-up, and framework building. We're connecting what we saw on the ground with the broader strategy questions we've been tasked to address.</p>
-      <p><em>✏️ Add your own reflections for Day 9 here.</em></p>
+      <p>An early start — we were up and out the door to make it to <strong>Thaifex</strong>, the largest food and beverage convention in Asia. Once we checked in and got our official badges, we walked in and immediately understood why: the scale of the event is hard to overstate. Booth after booth of brands, buyers, and innovators from across the region and beyond.</p>
+      <h4>Perfect Earth Booth</h4>
+      <p>Our first stop was the <strong>Perfect Earth booth</strong>, where we got to meet members of the team behind our client's other company — focused on rice noodles. We spoke at length with the CEO, which gave us a much clearer picture of where <strong>Mulberry Matcha and Wawee 7</strong> fit within the broader HTO product portfolio and how to differentiate them at retail.</p>
+      <h4>Competitor Research on the Floor</h4>
+      <p>From there we spread out and got to work — visiting booths across the supplement and wellness space, speaking directly with brands operating in a similar category to Wawee 7 and Mulberry Matcha. The conversations were candid and useful: we came away with a much sharper sense of which products have gained traction in Thailand, which have struggled, and why. Real market intelligence, gathered on the floor.</p>
+      <h4>Haas Alumni Dinner</h4>
+      <p>To close out the day, we had the chance to meet a <strong>Haas MBA alumnus from the class of 2020</strong>. We shared a meal, swapped notes on our respective treks, and heard about his journey into extreme leadership — and his perspective on the Thailand consumer market, which is now his professional home. A great conversation to have at this stage of the trip, with the final sprint ahead of us.</p>
     `,
     photos: [
       "images/day9/95533017-b4d4-49d8-83ca-d0025714513d.JPG",
       "images/day9/636F99F0-FCFB-4D7D-ACFA-6EB7D42BB2BB.JPG",
       "images/day9/IMG_1710.jpeg",
-      "images/day9/IMG_1682.jpeg",
       "images/day9/IMG_1713.jpeg",
       "images/day9/IMG_5180.jpeg",
       "images/day9/IMG_5184.jpeg"
