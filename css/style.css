@@ -4,12 +4,12 @@
    CSS VARIABLES
    ============================================ */
 :root {
-  --bg:           #F5F0E8;
-  --bg-dark:      #EAE3D5;
-  --bg-darker:    #DDD5C2;
-  --primary:      #2D5016;
-  --primary-mid:  #3D6B20;
-  --primary-light:#4F8A2A;
+  --bg:           #F6F2EA;
+  --bg-dark:      #EDE7D8;
+  --bg-darker:    #E0D8C6;
+  --primary:      #4E7B5F;
+  --primary-mid:  #5E9070;
+  --primary-light:#7AAB88;
   --accent:       #C4873A;
   --accent-light: #D9A05A;
   --text:         #3D2B1F;
@@ -113,7 +113,7 @@ nav {
    ============================================ */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(145deg, #192c0a 0%, var(--primary) 45%, #3f6f1a 100%);
+  background: linear-gradient(145deg, #2E5443 0%, var(--primary) 50%, #6A9B78 100%);
   display: flex; align-items: center; justify-content: center;
   text-align: center;
   padding: calc(var(--nav-h) + 4rem) 2rem 5rem;
@@ -319,10 +319,10 @@ nav {
 .team-photo .initials { position: relative; z-index: 0; opacity: .9; }
 
 /* Individual card colors when no photo */
-.team-card:nth-child(1) .team-photo { background: linear-gradient(135deg, #2D5016 0%, #4F8A2A 100%); }
-.team-card:nth-child(2) .team-photo { background: linear-gradient(135deg, #4A2D1F 0%, #7A5035 100%); }
-.team-card:nth-child(3) .team-photo { background: linear-gradient(135deg, #1A4060 0%, #2E6090 100%); }
-.team-card:nth-child(4) .team-photo { background: linear-gradient(135deg, #5A3A00 0%, #8A5A10 100%); }
+.team-card:nth-child(1) .team-photo { background: linear-gradient(135deg, #4E7B5F 0%, #7AAB88 100%); }
+.team-card:nth-child(2) .team-photo { background: linear-gradient(135deg, #7A5C45 0%, #A87D5F 100%); }
+.team-card:nth-child(3) .team-photo { background: linear-gradient(135deg, #4A7080 0%, #6A96A8 100%); }
+.team-card:nth-child(4) .team-photo { background: linear-gradient(135deg, #7A6040 0%, #A88858 100%); }
 
 .team-info { padding: 1.4rem 1.5rem 1.6rem; }
 .team-name { font-family: var(--font-head); font-size: 1.1rem; color: var(--primary); margin-bottom: .2rem; }
@@ -425,7 +425,7 @@ nav {
    FOOTER
    ============================================ */
 footer {
-  background: #172a07;
+  background: #2E4A3A;
   color: rgba(255,255,255,.55);
   text-align: center;
   padding: 2.5rem 2rem;
@@ -440,11 +440,11 @@ footer a:hover { color: var(--accent); }
    BLOG PAGE LAYOUT
    ============================================ */
 .blog-body {
-  margin-top: var(--nav-h);
+  padding-top: var(--nav-h);
   display: flex;
   flex-direction: column;
-  height: calc(100vh - var(--nav-h));
-  overflow: hidden;
+  height: 100vh;
+  height: 100dvh;
 }
 
 /* Day tabs bar */
@@ -454,6 +454,8 @@ footer a:hover { color: var(--accent); }
   display: flex; align-items: center; gap: .4rem;
   overflow-x: auto;
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
   scrollbar-width: thin;
   scrollbar-color: rgba(255,255,255,.2) transparent;
 }
@@ -492,6 +494,7 @@ footer a:hover { color: var(--accent); }
   display: grid;
   grid-template-columns: 44% 56%;
   flex: 1;
+  min-height: 0;
   overflow: hidden;
 }
 
@@ -619,32 +622,48 @@ footer a:hover { color: var(--accent); }
 /* ============================================
    LEAFLET CUSTOM MARKERS
    ============================================ */
-.custom-marker {
-  display: flex; align-items: center; justify-content: center;
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  box-shadow: 0 3px 12px rgba(0,0,0,.25);
-  font-size: 16px;
-  transition: transform .2s;
+
+/* Tile layer: warm colour toning */
+#map .leaflet-tile-pane {
+  filter: saturate(1.08) hue-rotate(-4deg) brightness(1.02);
 }
-.custom-marker.location {
-  background: var(--primary);
-  color: white; font-size: 14px;
-  border: 3px solid white;
+
+/* Pin base */
+.map-pin-inner {
+  box-shadow: 0 4px 14px rgba(0,0,0,.4);
 }
-.custom-marker.location.current {
-  background: var(--accent);
-  animation: pulse-ring 2s ease-out infinite;
+
+/* Current-location pin: amber pulse */
+.map-pin-current {
+  box-shadow: 0 4px 14px rgba(0,0,0,.4), 0 0 0 0 rgba(196,135,58,.7);
+  animation: pin-pulse 2s ease-out infinite;
 }
-@keyframes pulse-ring {
-  0%   { box-shadow: 0 0 0 0 rgba(196,135,58,.6); }
-  70%  { box-shadow: 0 0 0 12px rgba(196,135,58,0); }
-  100% { box-shadow: 0 0 0 0 rgba(196,135,58,0); }
+@keyframes pin-pulse {
+  0%   { box-shadow: 0 4px 14px rgba(0,0,0,.4), 0 0 0 0   rgba(196,135,58,.7); }
+  70%  { box-shadow: 0 4px 14px rgba(0,0,0,.4), 0 0 0 12px rgba(196,135,58,0); }
+  100% { box-shadow: 0 4px 14px rgba(0,0,0,.4), 0 0 0 0   rgba(196,135,58,0); }
 }
-.custom-marker.vehicle {
-  background: white;
-  border: 2px solid var(--border);
-  font-size: 18px;
+
+/* Zoom controls */
+.leaflet-control-zoom {
+  border: none !important;
+  border-radius: var(--r-sm) !important;
+  box-shadow: var(--sh) !important;
+}
+.leaflet-control-zoom a {
+  background: white !important;
+  color: var(--primary) !important;
+  border-color: var(--border) !important;
+  font-weight: 700 !important;
+}
+.leaflet-control-zoom a:hover {
+  background: var(--primary) !important;
+  color: white !important;
+}
+.leaflet-control-attribution {
+  background: rgba(255,255,255,.75) !important;
+  font-size: .62rem !important;
+  border-radius: var(--r-sm) 0 0 0 !important;
 }
 
 .leaflet-popup-content-wrapper {
@@ -670,7 +689,7 @@ footer a:hover { color: var(--accent); }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .client-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .blog-split { grid-template-columns: 1fr; grid-template-rows: 320px 1fr; }
-  .blog-body { height: auto; overflow: auto; }
+  .blog-body { height: auto; min-height: 100vh; }
   .content-panel { overflow-y: visible; }
 }
 
