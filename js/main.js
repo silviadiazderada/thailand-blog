@@ -42,7 +42,7 @@ function buildTabs() {
   if (!bar) return;
 
   DAYS.forEach((day, i) => {
-    const hasTravel = day.travel ? (day.travel.mode === 'plane' ? ' ✈' : ' 🚗') : '';
+    const hasTravel = day.travel?.mode === 'plane' ? ' ✈' : '';
     const btn = document.createElement('button');
     btn.className = `day-tab${i === 0 ? ' active' : ''}`;
     btn.setAttribute('data-idx', i);
@@ -127,7 +127,6 @@ function renderEntry(idx) {
         <div class="entry-meta">
           <span>📍 ${day.location.name}</span>
           ${travelInfo}
-          <span>✍️ ${day.authors}</span>
         </div>
       </header>
 
@@ -140,7 +139,7 @@ function renderEntry(idx) {
         <div class="photo-grid">${photosHTML}</div>
       </div>
 
-      <nav class="nav-arrows" aria-label="Day navigation">
+      <div class="nav-arrows" role="navigation" aria-label="Day navigation">
         <button class="nav-arrow-btn" onclick="activateDay(${idx - 1})" ${idx === 0 ? 'disabled' : ''}>
           ← Day ${idx > 0 ? DAYS[idx-1].day : '—'}
         </button>
@@ -148,7 +147,7 @@ function renderEntry(idx) {
         <button class="nav-arrow-btn" onclick="activateDay(${idx + 1})" ${idx === DAYS.length - 1 ? 'disabled' : ''}>
           Day ${idx < DAYS.length - 1 ? DAYS[idx+1].day : '—'} →
         </button>
-      </nav>
+      </div>
     </div>`;
 }
 

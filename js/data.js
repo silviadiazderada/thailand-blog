@@ -9,30 +9,30 @@ const TEAM = [
   {
     name:    "Silvia Díaz de Rada",
     initials:"SD",
-    role:    "Team Lead · McKinsey Associate",
-    bio:     "Team Lead, McKinsey Associate, and philosopher-in-chief. She'll have you questioning the meaning of existence between slide decks with the most unexpectedly profound questions at 11pm — when everyone just wants to sleep. Her superpower? An almost supernatural ability to sniff out a deal. Bangkok markets, Chiang Mai bazaars, a random roadside stall — no bargain is safe. Said yes to trail running AND Muay Thai. On the same trip. We're not sure she's human, but we're very glad she's our team lead.",
-    photo:   null   // ← set to "images/team/silvia.jpg" once exported from PDF
+    role:    "Team Lead · Strategy Consultant",
+    bio:     "Strategy consultant and team lead with a sharp eye for market opportunities — and an equally sharp eye for a good deal at any Bangkok market stall. Always down to try new things: Muay Thai, trail running, walking with elephants. The rest of the team is still recovering.",
+    photo:   "images/team/Silvia.jpeg"
   },
   {
     name:    "Briana Yesu",
     initials:"BY",
     role:    "Team Member · Marketing Technology",
-    bio:     "Team member, official team mom, and Bangkok's most suspiciously well-connected newcomer. Within 48 hours of landing, Briana had already found three alumni connections, a food blogger shortcut to the best khao soi in Chiang Rai, and the exact BTS route nobody tells you about. She knows all the tricks, all the contacts, and exactly where the team should be at any given moment. Honestly, the trip runs on Briana. We're just along for the ride.",
-    photo:   null   // ← set to "images/team/briana.jpg" once exported from PDF
+    bio:     "Marketing technology specialist who already knew the best local spots, the shortcuts, and the contacts before the plane had even landed. Connected with three Haas alumni across Bangkok within the first 48 hours. She knew all the tricks and exactly where the team should be at any given moment. The trip ran on Briana.",
+    photo:   "images/team/briana.jpeg"
   },
   {
     name:    "Zander Chase",
     initials:"ZC",
     role:    "Team Member · Data Science & Go-to-Market",
-    bio:     "Team member, data scientist, go-to-market strategist, and the single greatest threat to Thailand's mango sticky rice supply chain. Zander casually mentioned 'a quick morning run' one day and returned three hours later, barely sweaty, having covered 20 miles — while the rest of us were still deciding whether to get out of bed. His data models are as precise as his rice consumption is legendary. Brings quiet intensity to everything he does, and somehow always smiling about it. We're watching you, Zander.",
-    photo:   null   // ← set to "images/team/zander.jpg" once exported from PDF
+    bio:     "Data scientist, go-to-market strategist, and the team's resident food and agriculture expert — the one who actually knows what Lion's Mane does and why spirulina needs to be dosed carefully. Also the single greatest threat to Thailand's mango sticky rice supply chain, and the only person who returned from a 'quick morning run' three hours later having covered 20 miles.",
+    photo:   "images/team/Zander.jpeg"
   },
   {
     name:    "Mateo Torrico",
     initials:"MT",
     role:    "Team Member · Political Strategy & Public Affairs",
-    bio:     "Team member, political strategist, public affairs expert, and Thailand's most passionate Grab app evangelist. Mateo can move mountains — he just prefers to do it after 10am, ideally with a coffee that arrived via Grab. His belief in the app as a superior mode of urban existence borders on the spiritual. Mornings are not his medium. Evenings, however? Legendary. There is a statistically non-trivial probability he does not board the return flight. The Bay Area's loss is Bangkok's gain.",
-    photo:   null   // ← set to "images/team/mateo.jpg" once exported from PDF
+    bio:     "Political strategist and public affairs expert who led an army of designers to bring the Wawee Wellness brand image and packaging to life in record time. Has a deep, unwavering loyalty to the Grab app — he will Grab his way anywhere, any time, under any circumstances. Mornings were not his medium. Evenings, however? Legendary.",
+    photo:   "images/team/mateo.jpeg"
   }
 ];
 
@@ -65,7 +65,16 @@ const DAYS = [
       <p>We continued building out our pricing benchmarks across retail channels, getting a fuller picture of the competitive landscape before we even sit down with the client.</p>
       <p>We wrapped up with a well-earned <em>Kua Gai</em> at Street Food — a proper Bangkok welcome. A solid Day 1. Getting into stores before sitting with the client means we're already showing up with sharper context.</p>
     `,
-    photos: []
+    photos: [
+      "images/day1/IMG_1305.jpeg",
+      "images/day1/IMG_1307.jpeg",
+      "images/day1/IMG_1309.jpeg",
+      "images/day1/IMG_1312.jpeg",
+      "images/day1/IMG_1315.jpeg",
+      "images/day1/IMG_1319.jpeg",
+      "images/day1/IMG_1320.jpeg",
+      "images/day1/33DE7FC8-7EB2-4768-B932-69207E2BF51D.JPG"
+    ]
   },
   {
     day:      2,
@@ -82,7 +91,15 @@ const DAYS = [
       <p>Afterward, we visited <strong>Ohkajhu</strong>, an organic farm-to-table restaurant, where we enjoyed fresh local dishes and learned more about Nakkarin's experience with HTO. Then we enjoyed coffee and matcha from <strong>Cafe Amazon</strong>, Thailand's largest coffee chain — and a potential future retail partner for Wawee Wellness products.</p>
       <p>We ended the day by bringing home Mulberry Matcha samples for the team to try so we can better understand how to develop its packaging and design, helping accelerate the product's path to shelves at Lemon Farm and beyond.</p>
     `,
-    photos: []
+    photos: [
+      "images/day2/IMG_1349.jpeg",
+      "images/day2/IMG_1350.jpeg",
+      "images/day2/IMG_1351.jpeg",
+      "images/day2/IMG_1352.jpeg",
+      "images/day2/IMG_1355.jpeg",
+      "images/day2/IMG_4864.jpeg",
+      "images/day2/IMG_4868 2.jpeg"
+    ]
   },
   {
     day:      3,
@@ -102,7 +119,19 @@ const DAYS = [
       <h4>Temple Visit</h4>
       <p>We wrapped up the day visiting a local temple with members of the Hilltribe Organics team — a great chance to build the relationship outside of a professional context. The best conversations happen when the workday ends.</p>
     `,
-    photos: []
+    photos: [
+      "images/day3/IMG_1376.jpeg",
+      "images/day3/IMG_1380.jpeg",
+      "images/day3/IMG_1387.jpeg",
+      "images/day3/IMG_1394.jpeg",
+      "images/day3/IMG_1401.jpeg",
+      "images/day3/IMG_4886.jpeg",
+      "images/day3/IMG_4889.jpeg",
+      "images/day3/IMG_4893.jpeg",
+      "images/day3/IMG_4939.jpeg",
+      "images/day3/IMG_7563.jpeg",
+      "images/day3/IMG_7571.jpeg"
+    ]
   },
   {
     day:      4,
@@ -122,7 +151,24 @@ const DAYS = [
       <h4>Evening in the Valley</h4>
       <p>We said goodbye to the HTO team and checked into a hotel overlooking the valley. The evening called for a trail run through the surrounding hills — the views were worth every step.</p>
     `,
-    photos: []
+    photos: [
+      "images/day4/DSCF6005.JPG",
+      "images/day4/DSCF6015.JPG",
+      "images/day4/IMG_4173.jpeg",
+      "images/day4/IMG_4175.jpeg",
+      "images/day4/IMG_4176.jpeg",
+      "images/day4/IMG_4177.jpeg",
+      "images/day4/IMG_4180.jpeg",
+      "images/day4/IMG_4185.jpeg",
+      "images/day4/IMG_4188.jpeg",
+      "images/day4/IMG_4194.jpeg",
+      "images/day4/IMG_4213.jpeg",
+      "images/day4/IMG_4957.jpeg",
+      "images/day4/IMG_4980.jpeg",
+      "images/day4/IMG_7647-preview.jpeg",
+      "images/day4/IMG_1408.jpeg",
+      "images/day4/e6537522-61ad-40bf-a521-56c9d79a48da.JPG"
+    ]
   },
   {
     day:      5,
@@ -140,7 +186,21 @@ const DAYS = [
       <h4>Arriving in Chiang Mai</h4>
       <p>By afternoon we arrived in Chiang Mai, where we spent the evening exploring the city and unwinding at a lively night market. Pizza included. Chiang Rai delivered more than expected — a productive end to a packed week in the field.</p>
     `,
-    photos: []
+    photos: [
+      "images/day5/IMG_4172.jpeg",
+      "images/day5/IMG_4227.jpeg",
+      "images/day5/DSCF6028.JPG",
+      "images/day5/IMG_1446.jpeg",
+      "images/day5/IMG_1472.jpg",
+      "images/day5/IMG_1477.jpeg",
+      "images/day5/IMG_1479.jpeg",
+      "images/day5/IMG_1480.jpeg",
+      "images/day5/IMG_1483.jpeg",
+      "images/day5/IMG_1485.jpeg",
+      "images/day5/IMG_1497.jpeg",
+      "images/day5/IMG_1498.jpeg",
+      "images/day5/IMG_4943.jpeg"
+    ]
   },
   {
     day:      6,
@@ -156,14 +216,24 @@ const DAYS = [
       <p>Saturday took us to <strong>Joy Elephant Sanctuary</strong>, about an hour outside the city. We fed the elephants, walked alongside them through the jungle, and took part in a <strong>traditional Thai herbal balm workshop</strong> — a hands-on introduction to one of the region's most beloved natural remedies. A grounding experience that felt very aligned with the wellness-rooted world we've been immersed in all week.</p>
       <p>Hard to explain how it feels to walk next to an elephant through the forest. You just have to do it.</p>
     `,
-    photos: []
+    photos: [
+      "images/day6/IMG_1583.jpeg",
+      "images/day6/IMG_1638.jpg",
+      "images/day6/IMG_1645.jpeg",
+      "images/day6/IMG_1647.jpeg",
+      "images/day6/IMG_1658.jpeg",
+      "images/day6/IMG_5069.jpeg",
+      "images/day6/IMG_5099.jpeg",
+      "images/day6/IMG_5119.jpeg",
+      "images/day6/IMG_5122.jpeg"
+    ]
   },
   {
     day:      7,
     date:     "Sunday, May 24, 2026",
     shortDate:"May 24",
     title:    "Day 7 — Baan Kang Wat & Back to Bangkok",
-    location: LOC.bangkok,
+    location: LOC.chiangMai,
     travel:   { from: LOC.chiangMai, to: LOC.bangkok, mode: "plane" },
     authors:  "The Team",
     content: `
@@ -174,7 +244,14 @@ const DAYS = [
       <p>By evening we flew back to Bangkok, full and ready for the final stretch of the project. The mountains gave way to flat plains somewhere below us, and just like that, the field phase was over.</p>
       <p>What we carry back: a much sharper picture of the operation, the people, and what Hilltribe Organics is really building up there.</p>
     `,
-    photos: []
+    photos: [
+      "images/day7/IMG_1662.jpeg",
+      "images/day7/IMG_1663.jpeg",
+      "images/day7/IMG_1668.jpeg",
+      "images/day7/IMG_1673.jpeg",
+      "images/day7/IMG_1674.jpeg",
+      "images/day7/IMG_5142.jpeg"
+    ]
   },
   {
     day:      8,
@@ -194,7 +271,14 @@ const DAYS = [
       <h4>Lunch at Phed Mark</h4>
       <p>We ended the workday with lunch at <strong>Phed Mark</strong> — which, we quickly learned, means "very spicy." It was. We had no regrets.</p>
     `,
-    photos: []
+    photos: [
+      "images/day8/IMG_5161.jpeg",
+      "images/day8/IMG_5167.jpeg",
+      "images/day8/IMG_5170.jpeg",
+      "images/day8/IMG_5172.jpeg",
+      "images/day8/IMG_5175.jpeg",
+      "images/day8/IMG_5163 2.jpeg"
+    ]
   },
   {
     day:      9,
@@ -208,7 +292,15 @@ const DAYS = [
       <p>A heads-down day of research, interviews follow-up, and framework building. We're connecting what we saw on the ground with the broader strategy questions we've been tasked to address.</p>
       <p><em>✏️ Add your own reflections for Day 9 here.</em></p>
     `,
-    photos: []
+    photos: [
+      "images/day9/95533017-b4d4-49d8-83ca-d0025714513d.JPG",
+      "images/day9/636F99F0-FCFB-4D7D-ACFA-6EB7D42BB2BB.JPG",
+      "images/day9/IMG_1710.jpeg",
+      "images/day9/IMG_1682.jpeg",
+      "images/day9/IMG_1713.jpeg",
+      "images/day9/IMG_5180.jpeg",
+      "images/day9/IMG_5184.jpeg"
+    ]
   },
   {
     day:      10,
