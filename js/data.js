@@ -248,6 +248,7 @@ const DAYS = [
       "images/day7/IMG_1668.jpeg",
       "images/day7/IMG_1673.jpeg",
       "images/day7/IMG_1674.jpeg",
+      "images/day7/IMG_4285.jpeg",
       "images/day7/IMG_5142.jpeg"
     ]
   },
@@ -270,12 +271,14 @@ const DAYS = [
       <p>We ended the workday with lunch at <strong>Phed Mark</strong> — which, we quickly learned, means "very spicy." It was. We had no regrets.</p>
     `,
     photos: [
+      "images/day8/IMG_1686.jpeg",
+      "images/day8/IMG_1690.jpeg",
       "images/day8/IMG_5161.jpeg",
+      "images/day8/IMG_5163 2.jpeg",
       "images/day8/IMG_5167.jpeg",
       "images/day8/IMG_5170.jpeg",
       "images/day8/IMG_5172.jpeg",
-      "images/day8/IMG_5175.jpeg",
-      "images/day8/IMG_5163 2.jpeg"
+      "images/day8/IMG_5175.jpeg"
     ]
   },
   {
@@ -316,7 +319,19 @@ const DAYS = [
       <p>The recommendations are starting to take shape. We split tasks today: one pair working on the financial model, another on the market analysis and strategic narrative.</p>
       <p><em>✏️ Add your own reflections for Day 10 here.</em></p>
     `,
-    photos: []
+    photos: [
+      "images/day10/IMG_1747.jpeg",
+      "images/day10/IMG_1749.jpeg",
+      "images/day10/IMG_1755.jpeg",
+      "images/day10/IMG_1757.jpeg",
+      "images/day10/IMG_1758.jpeg",
+      "images/day10/IMG_1759.jpeg",
+      "images/day10/IMG_1763.jpg",
+      "images/day10/IMG_1769.jpeg",
+      "images/day10/IMG_1779.jpg",
+      "images/day10/IMG_4340.jpeg",
+      "images/day10/IMG_5194.jpeg"
+    ]
   },
   {
     day:      11,
@@ -330,7 +345,9 @@ const DAYS = [
       <p>We spent the day stress-testing our ideas, challenging each other's assumptions, and polishing our output. Bangkok's café culture proved a perfect backdrop for long, focused work sessions.</p>
       <p><em>✏️ Add your own reflections for Day 11 here.</em></p>
     `,
-    photos: []
+    photos: [
+      "images/day11/7209680D-6FE4-41F2-A321-ACD5A0A3D855.JPG"
+    ]
   },
   {
     day:      12,
