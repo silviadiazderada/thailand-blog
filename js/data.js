@@ -359,10 +359,19 @@ const DAYS = [
     authors:  "The Team",
     content: `
       <p>Our last day in Thailand. We delivered our final presentation to Hilltribe Organics and reflected together on everything this experience has given us — knowledge, perspective, and friendships that will last far beyond the MBA.</p>
-      <h4>Thank You, Thailand 🙏</h4>
-      <p>To the farmers of Wawee Valley, the Hilltribe Organics team, and everyone who welcomed us — this has been unforgettable. We hope our work can contribute, in some small way, to the important mission you are building.</p>
       <p><em>✏️ Add your own reflections for Day 12 here.</em></p>
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border);">
+      <h4>A Note of Gratitude</h4>
+      <p>To <strong>IBD</strong> and <strong>Hilltribe Organics</strong> — thank you for this experience. It has been one of the most meaningful things we have done in our MBA, and we mean that sincerely.</p>
+      <p>Meeting the <strong>Wawee families</strong> and the ground team in person, walking the farms, seeing the operations up close — it made everything real in a way that no case study or classroom exercise ever could. We didn't just learn about a company; we lived its mission firsthand and saw with our own eyes the positive impact it brings to these communities. That is something we will carry with us.</p>
+      <p>We have also come away with a much deeper understanding of the <strong>food and wellness space in Asia and globally</strong> — the supply chains, the retail dynamics, the consumer trends, and the very human stories behind what ends up on a shelf. And working through the real challenges of launching a new product — from formulation to pricing to brand positioning — has been more instructive than we ever expected.</p>
+      <p>There is no substitute for the real thing. That is what IBD gave us, and it made all the difference.</p>
+      <p>We leave Thailand with full hearts. Thank you. 🙏</p>
     `,
-    photos: []
+    photos: [
+      "images/closing remarks/Team photos.JPG",
+      "images/closing remarks/Hilltribe Organics Logo.jpg",
+      "images/closing remarks/IBD logo.png"
+    ]
   }
 ];
