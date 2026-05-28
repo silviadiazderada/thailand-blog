@@ -152,19 +152,19 @@ const DAYS = [
       <p>We said goodbye to the HTO team and checked into a hotel overlooking the valley. The evening called for a trail run through the surrounding hills — the views were worth every step.</p>
     `,
     photos: [
-      "images/day4/IMG_4173.jpeg",
+      "images/day4/IMG_4173.jpg",
       "images/day4/IMG_4175.jpeg",
       "images/day4/IMG_4176.jpeg",
       "images/day4/IMG_4177.jpeg",
       "images/day4/IMG_4180.jpeg",
-      "images/day4/IMG_4185.jpeg",
-      "images/day4/IMG_4188.jpeg",
-      "images/day4/IMG_4194.jpeg",
+      "images/day4/IMG_4185.jpg",
+      "images/day4/IMG_4188.jpg",
+      "images/day4/IMG_4194.jpg",
       "images/day4/IMG_4213.jpeg",
       "images/day4/IMG_4957.jpeg",
       "images/day4/IMG_4980.jpeg",
       "images/day4/IMG_7647-preview.jpeg",
-      "images/day4/IMG_1408.jpeg",
+      "images/day4/IMG_1408.jpg",
       "images/day4/e6537522-61ad-40bf-a521-56c9d79a48da.JPG"
     ]
   },
