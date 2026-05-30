@@ -46,9 +46,10 @@ function buildTabs() {
     const btn = document.createElement('button');
     btn.className = `day-tab${i === 0 ? ' active' : ''}`;
     btn.setAttribute('data-idx', i);
-    btn.innerHTML = `
-      <span class="tab-day">Day ${day.day}</span>
-      <span class="tab-loc">${day.location.name}${hasTravel}</span>`;
+    btn.innerHTML = day.tabLabel
+      ? `<span class="tab-day">${day.tabLabel}</span>`
+      : `<span class="tab-day">Day ${day.day}</span>
+         <span class="tab-loc">${day.location.name}${hasTravel}</span>`;
     btn.addEventListener('click', () => activateDay(i));
     bar.appendChild(btn);
   });
@@ -135,7 +136,7 @@ function renderEntry(idx) {
       <div class="entry-body">${day.content}</div>
 
       <div>
-        <p class="section-label" style="margin-bottom:.75rem">Photos</p>
+        <p class="section-label" style="margin-bottom:.75rem">${day.photoLabel || 'Photos'}</p>
         <div class="photo-grid">${photosHTML}</div>
       </div>
 
