@@ -166,18 +166,24 @@ nav {
   margin: 0 auto 2.5rem;
 }
 
-.hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.hero-buttons { display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap; align-items: center; }
+
+@keyframes btn-pulse {
+  0%, 100% { box-shadow: 0 4px 24px rgba(196,135,58,.45), 0 0 0 0 rgba(196,135,58,.35); }
+  60%       { box-shadow: 0 4px 24px rgba(196,135,58,.45), 0 0 0 10px rgba(196,135,58,0); }
+}
 
 .btn-primary {
-  display: inline-flex; align-items: center; gap: .5rem;
+  display: inline-flex; align-items: center; gap: .6rem;
   background: var(--accent); color: white;
-  padding: .85rem 2rem; border-radius: 100px;
-  font-weight: 700; font-size: .85rem; letter-spacing: .06em; text-transform: uppercase;
+  padding: 1.05rem 2.5rem; border-radius: 100px;
+  font-weight: 700; font-size: 1rem; letter-spacing: .06em; text-transform: uppercase;
   text-decoration: none;
   transition: all var(--t);
-  box-shadow: 0 4px 20px rgba(196,135,58,.4);
+  box-shadow: 0 4px 24px rgba(196,135,58,.45);
+  animation: btn-pulse 2.4s ease-in-out infinite;
 }
-.btn-primary:hover { background: var(--accent-light); color: white; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(196,135,58,.5); }
+.btn-primary:hover { background: var(--accent-light); color: white; transform: translateY(-2px); box-shadow: 0 10px 32px rgba(196,135,58,.55); animation: none; }
 
 .btn-outline {
   display: inline-flex; align-items: center; gap: .5rem;
