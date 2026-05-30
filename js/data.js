@@ -337,41 +337,48 @@ const DAYS = [
     day:      11,
     date:     "Thursday, May 28, 2026",
     shortDate:"May 28",
-    title:    "Day 11 — Coming Soon",
+    title:    "Day 11 — Final Presentation & Muay Thai",
     location: LOC.bangkok,
     travel:   null,
     authors:  "The Team",
     content: `
-      <p>We spent the day stress-testing our ideas, challenging each other's assumptions, and polishing our output. Bangkok's café culture proved a perfect backdrop for long, focused work sessions.</p>
-      <p><em>✏️ Add your own reflections for Day 11 here.</em></p>
+      <p>The alarm went off early — but we caught an amazing sunrise. With the final presentation just hours away, we spent the morning at the Jasmine 59 tightening our slides and making sure every recommendation was ready to deliver.</p>
+      <h4>The Final Presentation</h4>
+      <p>By mid-morning we were on the call with Richard and Nakkarin. We walked them through our local competitor observations, what we found on the ground at retailers like Lemon Farm and Thaifex, our final recommendations on positioning, formulation, and go-to-market strategy, and a detailed set of next steps for Wawee 7. The client was happy with the work — we had time to reflect on lessons learned, discuss the overall experience, and even talk about what a project for next year could look like. We closed with a warm thank you on both sides and agreed to stay in touch.</p>
+      <p>Months of work in Berkeley, two weeks in-country — it all came together in that call.</p>
+      <h4>Closing the Trip Right</h4>
+      <p>To close out the trip, we headed to a Muay Thai show — loud, fun, and at some point we found ourselves on the big screen. We had dinner, and made our way back to the hotel in a tuk-tuk.</p>
+      <p>The next day was all logistics and travel. The team headed home.</p>
     `,
     photos: [
-      "images/day11/7209680D-6FE4-41F2-A321-ACD5A0A3D855.JPG"
+      "images/day11/7209680D-6FE4-41F2-A321-ACD5A0A3D855.JPG",
+      "images/day11/IMG_1794.jpeg",
+      "images/day11/IMG_1817.jpeg",
+      "images/day11/IMG_1852.jpg",
+      "images/day11/IMG_7820.jpeg",
+      "images/day11/IMG_7823.jpeg"
     ]
   },
   {
     day:      12,
     date:     "Friday, May 29, 2026",
     shortDate:"May 29",
-    title:    "Day 12 — Coming Soon",
+    title:    "Thank You",
+    tabLabel:   "The End",
+    photoLabel: `<span style="font-style:italic;font-size:1.05rem;color:var(--text-light)">— Silvia, Briana, Zander &amp; Mateo</span>`,
     location: LOC.bangkok,
     travel:   null,
     authors:  "The Team",
     content: `
-      <p>Our last day in Thailand. We delivered our final presentation to Hilltribe Organics and reflected together on everything this experience has given us — knowledge, perspective, and friendships that will last far beyond the MBA.</p>
-      <p><em>✏️ Add your own reflections for Day 12 here.</em></p>
-      <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border);">
-      <h4>A Note of Gratitude</h4>
-      <p>To <strong>IBD</strong> and <strong>Hilltribe Organics</strong> — thank you for this experience. It has been one of the most meaningful things we have done in our MBA, and we mean that sincerely.</p>
-      <p>Meeting the <strong>Wawee families</strong> and the ground team in person, walking the farms, seeing the operations up close — it made everything real in a way that no case study or classroom exercise ever could. We didn't just learn about a company; we lived its mission firsthand and saw with our own eyes the positive impact it brings to these communities. That is something we will carry with us.</p>
-      <p>We have also come away with a much deeper understanding of the <strong>food and wellness space in Asia and globally</strong> — the supply chains, the retail dynamics, the consumer trends, and the very human stories behind what ends up on a shelf. And working through the real challenges of launching a new product — from formulation to pricing to brand positioning — has been more instructive than we ever expected.</p>
-      <p>There is no substitute for the real thing. That is what IBD gave us, and it made all the difference.</p>
-      <p>We leave Thailand with full hearts. Thank you. 🙏</p>
+      <p>This has been a genuinely great project. Getting to work alongside the Hilltribe Organics team in-country — meeting the Wawee families, walking the farms, seeing the whole operation up close — made our work better and made the experience something we'll actually remember.</p>
+      <p>Thank you to <strong>IBD</strong> for building a program around real work, and to <strong>Hilltribe Organics</strong> for bringing us in and trusting us with something that matters to them. Two weeks in Thailand gave us a much sharper understanding of sustainable food businesses, the Asian market, and what it actually takes to launch a product. Not bad for two weeks.</p>
+      <div style="display:flex;gap:3rem;align-items:center;justify-content:center;margin:2.5rem 0;flex-wrap:wrap;">
+        <img src="images/closing%20remarks/IBD%20logo.png" alt="IBD" style="height:64px;max-width:220px;object-fit:contain;mix-blend-mode:multiply;">
+        <img src="images/closing%20remarks/Hilltribe%20Organics%20Logo.jpg" alt="Hilltribe Organics" style="height:64px;max-width:220px;object-fit:contain;mix-blend-mode:multiply;">
+      </div>
     `,
     photos: [
-      "images/closing remarks/Team photos.JPG",
-      "images/closing remarks/Hilltribe Organics Logo.jpg",
-      "images/closing remarks/IBD logo.png"
+      "images/closing%20remarks/Team%20photos.JPG"
     ]
   }
 ];
