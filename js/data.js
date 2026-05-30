@@ -311,13 +311,20 @@ const DAYS = [
     day:      10,
     date:     "Wednesday, May 27, 2026",
     shortDate:"May 27",
-    title:    "Day 10 — Coming Soon",
+    title:    "Day 10 — Back to Thaifex",
     location: LOC.bangkok,
     travel:   null,
     authors:  "The Team",
     content: `
-      <p>The recommendations are starting to take shape. We split tasks today: one pair working on the financial model, another on the market analysis and strategic narrative.</p>
-      <p><em>✏️ Add your own reflections for Day 10 here.</em></p>
+      <p>Another day at Thaifex — and we needed it. The venue is enormous, and Day 9 barely scratched the surface. We came back with a clearer game plan and made our way through two sections that were high on the priority list: technology and beverages.</p>
+      <h4>The Technology Hall: A Machine for Wawee 7</h4>
+      <p>One find stood out immediately: a <strong>sachet packing machine</strong> that we think could be a strong fit for Wawee 7. Pre-portioned single-serve sachets simplify the experience for consumers — no measuring, no mess — and the machine's efficiency made a compelling case. It's the kind of packaging detail that doesn't show up in a market analysis but becomes obvious the moment you see it in action.</p>
+      <h4>The Beverage Hall: A Moringa Lead Worth Following</h4>
+      <p>In the beverage section we talked to several companies working in teas and functional powders. The one that stuck with us most was a <strong>Thai moringa powder company</strong> developing both a tea and a coffee product using locally grown moringa. Given HTO's roots in Northern Thailand and their focus on high-value organic crops, there's a real conversation to be had here — we flagged them as a potential future partner worth introducing to the client.</p>
+      <h4>Other Highlights</h4>
+      <p>We also spotted the <strong>Carabao Cup</strong> — the English Football League trophy — making an appearance at the fair, which prompted a brief detour and some confusion about how it ended up in a Bangkok convention center. We also sat in on a few talks covering emerging trends in the food and beverage industry, which gave useful context for where the broader market is heading.</p>
+      <h4>Evening: Pineapple Fried Rice</h4>
+      <p>After another full day on our feet, we stepped out into the Bangkok streets for some fresh air — and found what some members of the team had quietly had on their list since Day 1: <strong>pineapple fried rice, served in a pineapple</strong>. Bucket list item checked. Allergenic nightmare narrowly avoided.</p>
     `,
     photos: [
       "images/day10/IMG_1747.jpeg",
@@ -330,6 +337,8 @@ const DAYS = [
       "images/day10/IMG_1769.jpeg",
       "images/day10/IMG_1779.jpg",
       "images/day10/IMG_4340.jpeg",
+      "images/day10/IMG_4352.jpeg",
+      "images/day10/IMG_4357.jpeg",
       "images/day10/IMG_5194.jpeg"
     ]
   },
